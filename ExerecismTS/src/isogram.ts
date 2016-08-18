@@ -1,26 +1,23 @@
 ﻿
-function Isogram( word: string ) {
+const Isogram = ( word: string ) => {
     return {
-        isIsogram: function () {
+        isIsogram: () => {
             return isIsogram( cleanWord( word ) );
         }
     }
 }
 
-function cleanWord( word: string ): string {
+const cleanWord = ( word: string ) => {
     return word
         .replace( /[-\s]/g, '' )
         .toLowerCase();
 }
 
-function isIsogram( word: string ): boolean {
-    const unique = [];
-
-    word.split( '' )
-        .forEach( l => {
-            if ( unique.indexOf( l ) === -1 )
-                unique.push( l );
-        });
+const isIsogram = ( word: string ) => {
+    const unique = word
+        .split( '' )
+        .filter(( l, i, distinct ) =>
+            distinct.indexOf( l ) === i );
 
     return unique.length === word.length;
 }
