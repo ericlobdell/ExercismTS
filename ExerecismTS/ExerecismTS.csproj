@@ -37,9 +37,11 @@
   <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="src\circularbuffer.ts" />
     <TypeScriptCompile Include="src\isogram.ts" />
     <TypeScriptCompile Include="src\pangram.ts" />
     <TypeScriptCompile Include="src\phonenumber.ts" />
+    <TypeScriptCompile Include="tests\circularbuffer.spec.ts" />
     <TypeScriptCompile Include="tests\isogram.spec.ts" />
     <TypeScriptCompile Include="tests\pangram.spec.ts" />
     <TypeScriptCompile Include="tests\phonenumber.spec.ts" />

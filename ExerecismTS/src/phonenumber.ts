@@ -3,11 +3,11 @@ const PhoneNumber = ( number ) => {
     return {
         number: () => getPhoneNumber( number ),
         toString: () => parsePhoneNumber( number ),
-        areaCode: () => getAreaCode(number)
+        areaCode: () => getAreaCode( number )
     }
 }
 
-const getPhoneNumber = ( number : string ) => {
+const getPhoneNumber = ( number: string ) => {
     let clean = number.replace( /[\(\)\s-\.]/g, '' );
 
     if ( clean.length === 11 && +clean[0] === 1 )
@@ -16,7 +16,7 @@ const getPhoneNumber = ( number : string ) => {
     return clean.length === 10 ? clean : '0000000000';
 }
 
-const getAreaCode = ( number : string ) => {
+const getAreaCode = ( number: string ) => {
     return number.substr( 0, 3 );
 }
 
