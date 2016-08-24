@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.9</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -38,10 +38,12 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
     <TypeScriptCompile Include="src\circularbuffer.ts" />
+    <TypeScriptCompile Include="src\gradeschool.ts" />
     <TypeScriptCompile Include="src\isogram.ts" />
     <TypeScriptCompile Include="src\pangram.ts" />
     <TypeScriptCompile Include="src\phonenumber.ts" />
     <TypeScriptCompile Include="tests\circularbuffer.spec.ts" />
+    <TypeScriptCompile Include="tests\gradeschool.spec.ts" />
     <TypeScriptCompile Include="tests\isogram.spec.ts" />
     <TypeScriptCompile Include="tests\pangram.spec.ts" />
     <TypeScriptCompile Include="tests\phonenumber.spec.ts" />
